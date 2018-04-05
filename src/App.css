@@ -2,10 +2,59 @@
   padding: 0;
   margin: 0;
 }
+.App{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+/* HEADER COMPONENT */
 header{
-  display: flex;
+  background: green;
 }
 #logo{
-  width: 100px;
-  height: 100px;
+  position: relative;
+  top: 15px;
+  width: 80px;
+  height: 80px;
+}
+#headerBtn{
+  margin-left: auto;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 1px #000000;
+}
+.headerContainer{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+/* LEARN COMPONENT */
+.mainContent{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+}
+#mainForm{
+  display: flex;
+  flex-flow: column;
+}
+/* FOOTER COMPONENT */
+footer{
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+#footerMap{
+  list-style: none;
+  display: flex;
+  color: white;
+}
+#footerMap li{
+  padding: 0 10px;
 }
